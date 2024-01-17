@@ -1,0 +1,116 @@
+<!--осталось совместить логику-->>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>База Данных</title>
+  <script src="script.js" defer></script>
+</head>
+<body>
+</html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' href='style3.css'>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Помогатор</title>
+</head>
+<body>
+    <header class="header_0">
+        <div class="mail">
+            <h1>Помогатор</h1>
+        </div>
+        <div class='header'>
+            <div class='container'>
+                <div class='header-line'>
+                    <div class='header-logo'>
+                        <img src="logo/icon.png" alt="">
+                    </div>
+                    <div class='nav'>
+                        <a class='nav-item' href="index.html">ГЛАВНАЯ</a>
+                        <a class='nav-item' href="map.html">Карта</a>
+                        <a class='nav-item' href="places.html">База Данных</a>
+                        <a class='nav-item' href="feedback.html">Оставить отзыв</a>
+                    </div>
+
+                    <div class='cart'>
+                        <a href="#">
+                            <img class='cart-img' src="cart.png" alt="">
+                        </a>
+                    </div>
+            </div>
+            <h2>Подключение к бд</h2>
+                <form id="addForm">
+                <label for="name">Название:</label>
+                <input type="text" id="name"><br><br>
+                <label for="type">Тип:</label>
+                <select id="type">
+                    <option value="Ресторан">Ресторан</option>
+                    <option value="Кафе">Кафе</option>
+                    <option value="Бар">Бар</option>
+                </select><br><br>
+                <label for="district">Район:</label>
+                <select id="district">
+                    <option value="">Не выбрано</option>
+                    <option value="Район 1">Район 1</option>
+                    <option value="Район 2">Район 2</option>
+                    <option value="Район 3">Район 3</option>
+                    <option value="Район 4">Район 4</option>
+                </select><br><br>
+                <label for="okrug">Округ:</label>
+                <select id="okrug">
+                    <option value="">Не выбрано</option>
+                    <option value="Округ 1">Округ 1</option>
+                    <option value="Округ 2">Округ 2</option>
+                    <option value="Округ 3">Округ 3</option>
+                    <option value="Округ 4">Округ 4</option>
+                </select><br><br>
+                <input type="button" value="Добавить" onclick="addEnterprise()">
+                </form>
+
+            <h2>Поиск предприятия</h2>
+            <form>
+                <label for="okrug">Округ:</label>
+                <select id="okrug" onchange="showSelected()">
+                  <option value="">Не выбрано</option>
+                  <option value="okrug1">Округ 1</option>
+                  <option value="okrug2">Округ 2</option>
+                  <option value="okrug3">Округ 3</option>
+                  <option value="okrug4">Округ 4</option>
+                </select><br><br>
+                <label for="rayon">Район:</label>
+                <select id="rayon" onchange="showSelected()">
+                  <option value="">Не выбрано</option>
+                  <option value="rayon1">Район 1</option>
+                  <option value="rayon2">Район 2</option>
+                  <option value="rayon3">Район 3</option>
+                  <option value="rayon4">Район 4</option>
+                </select><br><br>
+                <label for="type">Тип:</label>
+                <select id="type" onchange="showSelected()">
+                  <option value="">Не выбрано</option>
+                  <option value="type1">Тип 1</option>
+                  <option value="type2">Тип 2</option>
+                  <option value="type3">Тип 3</option>
+                  <option value="type4">Тип 4</option>
+                </select><br><br>
+                <label for="discount">Скидка:</label>
+                <input type="text" id="discount" onchange="showSelected()"><br><br>
+                <input type="submit" value="Найти">
+              </form>
+  <h2>Предприятия общественного питания</h2>
+  <table id="enterpriseTable">
+    <tr>
+      <th>Название</th>
+      <th>Тип</th>
+      <th>Действия</th>
+    </tr>
+    <!-- Сюда будут добавляться предприятия динамически -->
+  </table>
+</body>
+</div>
+</body>
+</html>
