@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <link rel='stylesheet' href='style2.css'>
+    <link rel='stylesheet' href='style4(map).css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -10,9 +10,6 @@
 </head>
 <body>
     <header class="header_0">
-        <div class="mail">
-            <h1>Помогатор</h1>
-        </div>
         <div class='header'>
             <div class='container'>
                 <div class='header-line'>
@@ -33,7 +30,19 @@
                     </div>
                 </div>
             </div>
-            <script src="script.js"></script>
+            <div id="map"></div>
+
+            <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш_ключ_api&lang=ru_RU" type="text/javascript"></script>
+            <script type="text/javascript">
+                ymaps.ready(init);
+
+                function init() {
+                    var myMap = new ymaps.Map('map', {
+                        center: [55.753215, 37.622504],
+                        zoom: 10
+                    });
+                }
+            </script>
 </div>
 <footer class="footer">
     <p class="container">
@@ -42,3 +51,4 @@
 </footer>
 </body>
 </html>
+
