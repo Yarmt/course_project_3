@@ -2,11 +2,9 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <link rel='stylesheet' href='style.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel='stylesheet' href='style4(map).css'>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <title>ГЛАВНАЯ</title>
+    <title>Карта</title>
 </head>
 <body>
     <header class="header_0">
@@ -20,7 +18,7 @@
                     <div class='nav'>
                         <a class='nav-item' href="index.html">ГЛАВНАЯ</a>
                         <a class='nav-item' href="map.html">Карта</a>
-                        <a class='nav-item' href="map_html_point.html">База Данных</a>
+                        <a class='nav-item' href="places.html">База Данных</a>
                         <a class='nav-item' href="feedback.html">Оставить отзыв</a>
                     </div>
 
@@ -30,11 +28,16 @@
                     </div>
                 </div>
             </div>
-</div>
-<footer class="footer">
-    <p class="container">
-        &copy; Авторское право данного сайта закрепляется за Шминке Ярославом Даниловичем
-    </p>
-</footer>
+        </div>
+    </header>
+
+    <div id="map"></div>
+
+    <footer class="footer">
+        <p class="container">&copy; Авторское право данного сайта закрепляется за Шминке Ярославом Даниловичем</p>
+    </footer>
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=0f06968e-da6f-475e-b32b-59839cd8a2ee&lang=ru_RU" type="text/javascript"></script>
+    <script src="map.js" type="text/javascript"></script>
 </body>
 </html>
