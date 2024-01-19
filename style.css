@@ -30,7 +30,7 @@ body {
     color: #0238da;
     text-decoration: none;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 18px;
 
     margin-right: 25px;
 
@@ -62,6 +62,15 @@ body {
     transition: background-color 0.2s linear;
 }
 
-.button:hover {
-    background-color: #3f3371;
-}
+.content{
+    text-decoration:aquamarine;
+    background-color: #92dafe; /* синий фон #33a2dd*/
+    color: #4f4f4f; /* белый цвет текста */
+    text-align: center; /* выравнивание по центру */
+    margin-top: 20px ;
+    font-size: 20px; /* размер шрифта */
+    font-family: Arial, sans-serif; /* выбранный шрифт */
+    padding: 20px; /* отступы внутри блока */
+    border-radius: 10px; /* скругление углов блока */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* тень блока */
+  }

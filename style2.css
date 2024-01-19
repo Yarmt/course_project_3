@@ -30,7 +30,7 @@ body {
     color: #4169E1;
     text-decoration: none;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 18px;
 
     margin-right: 25px;
 
@@ -64,4 +64,7 @@ body {
 
 .button:hover {
     background-color: #3f3371;
+}
+.footer{
+    margin-bottom: auto;
 }

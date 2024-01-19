@@ -36,15 +36,14 @@
               <div class="container">
                 <div class="user-info">
                   <h2>Информация о пользователе</h2>
-                  <form id="user-info-form">
-                    <label for="txtName">Имя:</label>
-                    <input type="text" id="txtName" name="name"><br><br>
-                    <label for="txtEmail">Email:</label>
-                    <input type="email" id="txtEmail" name="email"><br><br>
-                    <label for="userPhoto">Фото профиля:</label>
-                    <input type="file" id="userPhoto" name="userPhoto"><br><br>
-                    <button type="submit">Сохранить</button>
-                  </form>
+                  <div class="user-info">
+                    <img src="user-photo.jpg" alt="User Photo">
+                    <div class="user-details">
+                      <h3>Имя пользователя</h3>
+                      <p>Email: user@example.com</p>
+                      <p>О себе: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisi vel bibendum tincidunt, nisl elit bibendum arcu, vel aliquet nisl velit vel nisl.</p>
+                    </div>
+                  </div>
                 </div>
                 <div class="user-reviews">
                   <h2>Ваши отзывы</h2>
@@ -74,4 +73,3 @@
   <title>Личный кабинет</title>
 </head>
 <body>
-  

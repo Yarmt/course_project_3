@@ -3,8 +3,4 @@ ymaps.ready(function() {
         center: [55.753215, 37.622504],
         zoom: 10
     });
-
-    <?php
-        include 'getPlacemarks.php';
-    ?>
 });
