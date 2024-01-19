@@ -5,7 +5,7 @@
     <link rel='stylesheet' href='style2.css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="style6(registration).css" rel="stylesheet">
     <title>Отзыв</title>
 </head>
 <body>
@@ -37,14 +37,14 @@
                 <div class="user-info">
                   <h2>Введите ваши ФИО и email</h2>
                   <form id="user-info-form">
-                    <label for="txtName">Имя:</label>
-                    <input type="text" id="txtName" name="name"><br><br>
-                    <label for="txtEmail">Email:</label>
-                    <input type="email" id="txtEmail" name="email"><br><br>
-                    <label for="userPhoto">Фото профиля:</label>
-                    <input type="file" id="userPhoto" name="userPhoto"><br><br>
-                    <button type="submit">Сохранить</button>
+                    <input type="text" id="txtName" placeholder="Имя">
+                    <input type="email" id="txtEmail" placeholder="Email">
+                    <input type="file" id="userPhoto">
+                    <textarea id="txtAboutMe" placeholder="Информация о себе"></textarea>
+                    <p>Проверьте корректность введенных данных и нажмите на кнопку "Регистрация"</p>
+                    <button type="submit">Зарегистрироваться</button>
                   </form>
+                  <script src="feedback_action.js"type="text/javascript"></script>
                 </div>
                 <div class="user-reviews">
                   <h2>Ваши отзывы</h2>
@@ -53,26 +53,6 @@
                   </div>
                 </div>
               </div>
-              <script>
-                // JavaScript код для отправки информации о пользователе на сервер и получения отзывов
-                document.getElementById('user-info-form').addEventListener('submit', function(e) {
-                  e.preventDefault();
-                  let name = document.getElementById('txtName').value;
-                  let email = document.getElementById('txtEmail').value;
-                  
-                  // Отправка информации на сервер...
-                  // Обновление информации о пользователе на странице
-                  // ...
-            
-                  // Очистка полей формы
-                  document.getElementById('txtName').value = '';
-                  document.getElementById('txtEmail').value = '';
-                  document.getElementById('userPhoto').value = '';
-                });
-              </script>
-            </body>
-            </html>
-            <script src="script.js"></script>
 </div>
 <footer class="footer">
     <p class="container">
@@ -81,13 +61,3 @@
 </footer>
 </body>
 </html>
-
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="style.css">
-  <title>Личный кабинет</title>
-</head>
-<body>
-  

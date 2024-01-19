@@ -5,7 +5,7 @@
     <link rel='stylesheet' href='style2.css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="style5(perpage).css" rel="stylesheet">
     <title>Отзыв</title>
 </head>
 <body>
@@ -33,17 +33,49 @@
             <header>
                 <h1>Личный кабинет</h1>
               </header>
-              <div class="container">
-                <div class="user-info">
-                  <h2>Информация о пользователе</h2>
-                  <div class="user-info">
-                    <img src="user-photo.jpg" alt="User Photo">
-                    <div class="user-details">
-                      <h3>Имя пользователя</h3>
-                      <p>Email: user@example.com</p>
-                      <p>О себе: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisi vel bibendum tincidunt, nisl elit bibendum arcu, vel aliquet nisl velit vel nisl.</p>
-                    </div>
-                  </div>
+              <div class="row" id="real-estates-detail">
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                <div class="panel panel-default">
+                <div class="panel-heading">
+                <header class="panel-title">
+                <div class="text-center">
+                </div>
+                </header>
+                </div>
+                <div class="panel-body">
+                <div class="text-center" id="author">
+                <img src="picture/user.jpg" style="width: 100px; height: 100px;">
+                <h3>Дмитрий Назаров</h3>
+                <small class="label label-warning">Российская Федерация</small>
+                </div>
+                </div>
+                </div>
+                </div>
+                <div class="col-lg-8 col-md-8 col-xs-12">
+                <div class="panel">
+                <div class="panel-body">
+                <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade" id="contact">
+                <p></p>
+                <form role="form">
+                <div class="form-group">
+                <label>Ваше имя</label>
+                <input type="text" class="form-control rounded" placeholder="Укажите Ваше Имя">
+                </div>
+                <div class="form-group">
+                <label>Ваш телефон</label>
+                <input type="text" class="form-control rounded" placeholder="(+7)(095)123456">
+                </div>
+                <div class="form-group">
+                <label>E-mail адрес</label>
+                <input type="email" class="form-control rounded" placeholder="Ваш Е-майл">
+                </div>
+                </div>
+                </form>
+                </div>
+                </div>
+                </div>
+                </div>
                 </div>
                 <div class="user-reviews">
                   <h2>Ваши отзывы</h2>
@@ -52,24 +84,10 @@
                   </div>
                 </div>
               </div>
-              <script src="feedback_action.js"></script>
-            </body>
-            </html>
-            <script src="script.js"></script>
-</div>
-<footer class="footer">
-    <p class="container">
-        &copy; Авторское право данного сайта закрепляется за Шминке Ярославом Даниловичем
-    </p>
-</footer>
-</body>
+              <footer class="footer">
+                <p class="container">
+                    &copy; Авторское право данного сайта закрепляется за Шминке Ярославом Даниловичем
+                </p>
+        </footer>
+    </body>
 </html>
-
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="style.css">
-  <title>Личный кабинет</title>
-</head>
-<body>
