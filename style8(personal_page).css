@@ -1,12 +1,14 @@
 .container {
-    display: flex;
-}
-.left-column {
-    flex: 1;
-}
-.right-column {
-    flex: 1;
-}
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Две колонки равной ширины */
+    grid-gap: 20px; /* Промежуток между колонками */
+  }
+  .reviews {
+    grid-column: 1; /* Отзывы будут в левой колонке */
+  }
+  .cabinet {
+    grid-column: 2; /* Личный кабинет будет в правой колонке */
+  }
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;

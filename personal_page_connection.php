@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 <head>
     <meta charset="UTF-8">
     <link rel='stylesheet' href='style8(personal_page).css'>
@@ -7,6 +7,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="style5(perpage).css" rel="stylesheet">
     <title>Отзыв</title>
+</head>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* Две колонки равной ширины */
+      grid-gap: 20px; /* Промежуток между колонками */
+    }
+    .reviews {
+      grid-column: 1; /* Отзывы будут в левой колонке */
+    }
+    .cabinet {
+      grid-column: 2; /* Личный кабинет будет в правой колонке */
+    }
+  </style>
 </head>
 <body>
     <header class="header_0">
@@ -31,7 +45,9 @@
                 </div>
             </div>
         </header>
-        <div class="container">
+        <div class="container2">
+            <div class="reviews">
+            <div class="container">
             <div class="left-column">
                 <h1>Личный кабинет</h1>
               <div class="row" id="real-estates-detail">
@@ -77,7 +93,9 @@
                 </div>
                 </div>
                 </div>
-                <div class="user-reviews">
+            </div>
+  <div class="cabinet">
+            <div class="user-reviews">
                     <h2>Ваши отзывы</h2>
                     <div id="reviews-list">
                         <?php
@@ -102,7 +120,9 @@
                         ?>
                     </div>
                 </div>
-              <footer class="footer">
+            </div>
+        </div>
+<footer class="footer">
                 <p class="container">
                     &copy; Авторское право данного сайта закрепляется за Шминке Ярославом Даниловичем
                 </p>
