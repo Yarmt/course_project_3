@@ -69,6 +69,18 @@ body {
 
     transition: background-color 0.2s linear;
 }
+.blue-rectangle {
+    background-color: #92dafe;
+    color: #0238da;
+    font-weight: bold;
+    padding: 5px;
+    margin-right: 0px;
+    height: 90px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .button:hover {
     background-color: #3f3371;
@@ -76,3 +88,16 @@ body {
 .footer{
     margin-bottom: auto;
 }
+@media (max-width: 767px) {
+    /* Здесь задаются стили для экранов шириной до 767 пикселей */
+  }
+  
+  /* Стили для планшетов и небольших экранов */
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* Здесь задаются стили для экранов шириной от 768 до 991 пикселей */
+  }
+  
+  /* Стили для десктопных экранов */
+  @media (min-width: 992px) {
+    /* Здесь задаются стили для экранов шириной от 992 пикселей и более */
+  }

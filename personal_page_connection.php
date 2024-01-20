@@ -15,7 +15,7 @@
                 <div class='header-line'>
                     <div class="blue-rectangle">Food checking</div>
                         <div class='header-logo'>
-                        <a href="index.html"><img src="logo/icon2.jpg" style="max-width: 120px; height: auto;">
+                        <a href="index.html"><img src="logo/icon2.jpg" style="max-width: 120px; height: auto;"></a>
                       </div>
                     <div class='nav'>
                         <a class='nav-item' href="index.html">Главная</a>
@@ -30,9 +30,10 @@
                     </div>
                 </div>
             </div>
-            <header>
+        </header>
+        <div class="container">
+            <div class="left-column">
                 <h1>Личный кабинет</h1>
-              </header>
               <div class="row" id="real-estates-detail">
                 <div class="col-lg-4 col-md-4 col-xs-12">
                 <div class="panel panel-default">
@@ -77,12 +78,30 @@
                 </div>
                 </div>
                 <div class="user-reviews">
-                  <h2>Ваши отзывы</h2>
-                  <div id="reviews-list">
-                    <!-- Сюда мы будем добавлять отзывы пользователя -->
-                  </div>
+                    <h2>Ваши отзывы</h2>
+                    <div id="reviews-list">
+                        <?php
+                        $connection = new mysqli('localhost', 'root', '', 'my_project_3');
+
+                        if (mysqli_connect_errno()) {
+                            echo "Failed to connect to MySQL: " . mysqli_connect_error();
+                            exit();
+                        }
+                        // Выборка отзывов из базы данных
+                        $query = "SELECT * FROM отзывы";
+                        $result = mysqli_query($connection, $query);
+                        // Отображение отзывов
+                        while ($row = mysqli_fetch_assoc($result)) {
+                            echo "<div>";
+                            echo "<strong>" . $row['venue'] . "</strong> ";
+                            echo "(" . $row['feedback'] . "):<br>";
+                            echo $row['created_at'];
+                            echo "</div>";
+                        }
+                        mysqli_close($connection);
+                        ?>
+                    </div>
                 </div>
-              </div>
               <footer class="footer">
                 <p class="container">
                     &copy; Авторское право данного сайта закрепляется за Шминке Ярославом Даниловичем

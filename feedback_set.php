@@ -13,8 +13,9 @@
         <div class='header'>
             <div class='container'>
                 <div class='header-line'>
+                    <div class="blue-rectangle">Food checking</div>
                     <div class='header-logo'>
-                        <img src="logo/icon2.jpg" style="max-width: 120px; height: auto;">
+                    <a href="index.html"><img src="logo/icon2.jpg" style="max-width: 120px; height: auto;">
                     </div>
 
                     <div class='nav'>

@@ -11,8 +11,8 @@
         <div class='header'>
             <div class='container'>
                 <div class='header-line'>
-                    <div class='header-logo'>
-                        <img src="logo/icon2.jpg" style="max-width: 120px; height: auto;">
+                <div class='header-logo'>
+                      <a href="index.html"><img src="logo/icon2.jpg" style="max-width: 120px; height: auto;">
                     </div>
 
                     <div class='nav'>

@@ -1,14 +1,15 @@
+.container {
+    display: flex;
+}
+.left-column {
+    flex: 1;
+}
+.right-column {
+    flex: 1;
+}
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-}
-
-.container {
-    margin: 0px 166px;
-}
-.header_0{
-    color: #4169E1;
-    text-align: center;
 }
 .blue-rectangle {
     background-color: #92dafe;
@@ -22,9 +23,16 @@ body {
     align-items: center;
     justify-content: center;
 }
+.container {
+    margin: 0px 166px;
+}
+.header_0{
+    color: #4169E1;
+    text-align: center;
+}
 
 .header {
-
+    background-image: url(picture/mos_background.jpg);
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -39,7 +47,7 @@ body {
 }
 
 .nav-item {
-    color: #4169E1;
+    color: #0238da;
     text-decoration: none;
     font-weight: 700;
     font-size: 18px;
@@ -50,7 +58,7 @@ body {
 }
 
 .nav-item:hover {
-    color: #B7410E;
+    color: #4778cc;
 }
 
 .num {
@@ -62,9 +70,8 @@ body {
 }
 
 .num:hover {
-    color: #B7410E;
+    color: #4778cc;
 }
-
 .button {
     background-color: #42addb;
     color:  #2b6282;
@@ -75,10 +82,10 @@ body {
     transition: background-color 0.2s linear;
 }
 
-.button:hover {
-    background-color: #3f3371;
+.content {
+    text-decoration-line: underline;
 }
-@media (max-width: 767px) {
+  @media (max-width: 767px) {
     /* Здесь задаются стили для экранов шириной до 767 пикселей */
   }
   

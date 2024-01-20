@@ -2,7 +2,18 @@ body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
 }
-
+.blue-rectangle {
+    background-color: #92dafe;
+    color: #0238da;
+    font-weight: bold;
+    padding: 5px;
+    margin-right: 0px;
+    height: 90px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .container {
     margin: 0px 166px;
 }
@@ -73,4 +84,17 @@ body {
     padding: 20px; /* отступы внутри блока */
     border-radius: 10px; /* скругление углов блока */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* тень блока */
+  }
+  @media (max-width: 767px) {
+    /* Здесь задаются стили для экранов шириной до 767 пикселей */
+  }
+  
+  /* Стили для планшетов и небольших экранов */
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* Здесь задаются стили для экранов шириной от 768 до 991 пикселей */
+  }
+  
+  /* Стили для десктопных экранов */
+  @media (min-width: 992px) {
+    /* Здесь задаются стили для экранов шириной от 992 пикселей и более */
   }

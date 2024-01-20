@@ -8,6 +8,18 @@
     border-radius: 4px;
     border-bottom: 4px solid #ddd;
    }
+   .blue-rectangle {
+    background-color: #92dafe;
+    color: #0238da;
+    font-weight: bold;
+    padding: 5px;
+    margin-right: 0px;
+    height: 90px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
    #real-estates-detail #author img {
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
@@ -25,9 +37,20 @@
     padding-top: 6px;
     margin-top: 10px;
    }
-   .panel-default .panel-heading {
-    background-color: #fff;
-   }
+
    #real-estates-detail .slides li img {
     height: 450px;
    }
+   @media (max-width: 767px) {
+    /* Здесь задаются стили для экранов шириной до 767 пикселей */
+  }
+  
+  /* Стили для планшетов и небольших экранов */
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* Здесь задаются стили для экранов шириной от 768 до 991 пикселей */
+  }
+  
+  /* Стили для десктопных экранов */
+  @media (min-width: 992px) {
+    /* Здесь задаются стили для экранов шириной от 992 пикселей и более */
+  }
