@@ -46,7 +46,7 @@
                 <div class="panel-body">
                 <div class="text-center" id="author">
                 <img src="picture/user-svgrepo-com.svg" style="width: 100px; height: 100px;">
-                <h3>Дмитрий Назаров</h3>
+                <h3>Контактная информация</h3>
                 </div>
                 </div>
                 </div>
@@ -60,15 +60,15 @@
                 <form role="form">
                 <div class="form-group">
                 <label>Ваше имя</label>
-                <input type="text" class="form-control rounded" placeholder="Укажите Ваше Имя">
+                <input type="text" class="form-control rounded" placeholder="Имя">
                 </div>
                 <div class="form-group">
-                <label>Ваш телефон</label>
-                <input type="text" class="form-control rounded" placeholder="(+7)(095)123456">
+                <label>Ваш E-mail адрес</label>
+                <input type="text" class="form-control rounded" placeholder="Е-майл">
                 </div>
                 <div class="form-group">
-                <label>E-mail адрес</label>
-                <input type="email" class="form-control rounded" placeholder="Ваш Е-майл">
+                <label>Ваша контактная информация</label>
+                <input type="email" class="form-control rounded" placeholder="Контактная информация">
                 </div>
                 </div>
                 </form>

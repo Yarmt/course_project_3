@@ -1,21 +1,14 @@
 #map {
     position: absolute;
-    top: 200px;
-    left: 100px;
-    right: 100px;
+    top: 250px;
+    left: 120px;
+    right: 120px;
     bottom: 20px;
 }
+
 body {
     margin: 0;
-    padding: 0;
-    background-color: #f2f2f2;
-    font-family: Arial, sans-serif;
-}
-header {
-    padding: 20px;
-    background-color: #333;
-    color: white;
-    text-align: center;
+    font-family: 'Open Sans', sans-serif;
 }
 .blue-rectangle {
     background-color: #92dafe;
@@ -29,11 +22,6 @@ header {
     align-items: center;
     justify-content: center;
 }
-body {
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-}
-
 .container {
     margin: 0px 166px;
 }
@@ -93,6 +81,31 @@ body {
     transition: background-color 0.2s linear;
 }
 
-.button:hover {
-    background-color: #3f3371;
-}
+.content{
+    text-decoration:aquamarine;
+    background-color: #92dafe; /* синий фон #33a2dd*/
+    color: #4f4f4f; /* белый цвет текста */
+    text-align: center; /* выравнивание по центру */
+    margin-top: 20px ;
+    font-size: 20px; /* размер шрифта */
+    font-family: Arial, sans-serif; /* выбранный шрифт */
+    padding: 20px; /* отступы внутри блока */
+    border-radius: 10px; /* скругление углов блока */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* тень блока */
+  }
+  
+
+  @media (max-width: 767px) {
+    /* Здесь задаются стили для экранов шириной до 767 пикселей */
+  }
+  
+  /* Стили для планшетов и небольших экранов */
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* Здесь задаются стили для экранов шириной от 768 до 991 пикселей */
+  }
+  
+  /* Стили для десктопных экранов */
+  @media (min-width: 992px) {
+    /* Здесь задаются стили для экранов шириной от 992 пикселей и более */
+  }
+
