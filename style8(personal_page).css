@@ -71,6 +71,12 @@ body {
     font-weight: 700;
     transition: background-color 0.2s linear;
 }
+.footer{
+    margin-bottom: auto;
+}
+.container2{
+    margin-bottom: 300px;
+}
 
 .content {
     text-decoration: aquamarine;
