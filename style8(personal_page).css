@@ -1,18 +1,11 @@
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Две колонки равной ширины */
-    grid-gap: 20px; /* Промежуток между колонками */
-  }
-  .reviews {
-    grid-column: 1; /* Отзывы будут в левой колонке */
-  }
-  .cabinet {
-    grid-column: 2; /* Личный кабинет будет в правой колонке */
-  }
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
+    background-image: url('picture/mos_background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 .blue-rectangle {
     background-color: #92dafe;
     color: #0238da;
@@ -25,37 +18,33 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+
 .container {
-    margin: 0px 166px;
+    margin: 0 166px;
 }
-.header_0{
+
+.header_0 {
     color: #4169E1;
     text-align: center;
+    width: 100%;
 }
-
-.header {
-    background-image: url(picture/mos_background.jpg);
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 
 .header-line {
     padding-top: 50px;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-bottom: 10px; /* Добавить отступ вниз для элемента header */
 }
 
 .nav-item {
+    margin-right: 10px; /* Добавить отступ справа для элемента nav-item */
     color: #0238da;
     text-decoration: none;
     font-weight: 700;
     font-size: 18px;
-
     margin-right: 25px;
-
     transition: color 0.3s linear;
 }
 
@@ -67,36 +56,40 @@ body {
     color: #4169E1;
     text-decoration: none;
     font-weight: 700;
-
     transition: color 0.3s linear;
 }
 
 .num:hover {
     color: #4778cc;
 }
+
 .button {
     background-color: #42addb;
-    color:  #2b6282;
+    color: #2b6282;
     text-decoration: none;
     padding: 14px 18px;
     font-weight: 700;
-
     transition: background-color 0.2s linear;
 }
 
 .content {
-    text-decoration-line: underline;
+    text-decoration: aquamarine;
+    background-color: #92dafe; /* синий фон #33a2dd*/
+    color: #4f4f4f; /* белый цвет текста */
+    text-align: center; /* выравнивание по центру */
+    margin-top: 20px ;
+    font-size: 20px; /* размер шрифта */
+    font-family: Arial, sans-serif; /* выбранный шрифт */
+    padding: 20px; /* отступы внутри блока */
+    border-radius: 10px; /* скругление углов блока */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* тень блока */
 }
-  @media (max-width: 767px) {
+
+@media (max-width: 767px) {
     /* Здесь задаются стили для экранов шириной до 767 пикселей */
-  }
-  
-  /* Стили для планшетов и небольших экранов */
-  @media (min-width: 768px) and (max-width: 991px) {
-    /* Здесь задаются стили для экранов шириной от 768 до 991 пикселей */
-  }
-  
-  /* Стили для десктопных экранов */
-  @media (min-width: 992px) {
-    /* Здесь задаются стили для экранов шириной от 992 пикселей и более */
-  }
+}
+
+/* Стили для планшетов и небольших экранов */
+@media (min-width: 768px) {
+
+}

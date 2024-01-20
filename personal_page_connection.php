@@ -23,19 +23,20 @@
   </style>
 </head>
 <body>
-    <header class="header_0">
+<header class="header_0">
         <div class='header'>
             <div class='container'>
                 <div class='header-line'>
                     <div class="blue-rectangle">Food checking</div>
-                        <div class='header-logo'>
-                        <a href="index.html"><img src="logo/icon2.jpg" style="max-width: 120px; height: auto;"></a>
-                      </div>
+                    <div class='header-logo'>
+                        <img src="logo/icon2.jpg" style="max-width: 120px; height: auto;">
+                    </div>
+
                     <div class='nav'>
                         <a class='nav-item' href="index.html">Главная</a>
                         <a class='nav-item' href="map.html">Карта</a>
                         <a class='nav-item' href="feedback_set.php">Оставить отзыв</a>
-                        <a class='nav-item' href="personal_page.html">Личный кабинет</a>
+                        <a class='nav-item' href="personal_page_connection.php">Личный кабинет</a>
                     </div>
 
 
@@ -94,6 +95,7 @@
                 </div>
                 </div>
             </div>
+            
   <div class="cabinet">
             <div class="user-reviews">
                     <h2>Ваши отзывы</h2>
@@ -122,6 +124,9 @@
                 </div>
             </div>
         </div>
+        </div>
+        </div>
+
 <footer class="footer">
                 <p class="container">
                     &copy; Авторское право данного сайта закрепляется за Шминке Ярославом Даниловичем
