@@ -1,101 +1,152 @@
-body {
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    background-image: url('picture/mos_background.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.blue-rectangle {
-    background-color: #92dafe;
-    color: #0238da;
-    font-weight: bold;
-    padding: 5px;
-    margin-right: 0px;
-    height: 90px;
-    text-align: center;
+.container2 {
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.container {
-    margin: 0 166px;
-}
-
-.header_0 {
-    color: #4169E1;
-    text-align: center;
-    width: 100%;
-}
-
-.header-line {
-    padding-top: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-bottom: 10px; /* Добавить отступ вниз для элемента header */
-}
-
-.nav-item {
-    margin-right: 10px; /* Добавить отступ справа для элемента nav-item */
-    color: #0238da;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 18px;
-    margin-right: 25px;
-    transition: color 0.3s linear;
-}
-
-.nav-item:hover {
-    color: #4778cc;
-}
-
-.num {
-    color: #4169E1;
-    text-decoration: none;
-    font-weight: 700;
-    transition: color 0.3s linear;
-}
-
-.num:hover {
-    color: #4778cc;
-}
-
-.button {
-    background-color: #42addb;
-    color: #2b6282;
-    text-decoration: none;
-    padding: 14px 18px;
-    font-weight: 700;
-    transition: background-color 0.2s linear;
-}
-.footer{
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .footer {
     margin-bottom: auto;
-}
-.container2{
-    margin-bottom: 300px;
-}
+    text-align: center;
+  }
+  .header-line {
+    display: flex;
+    justify-content: center;
+  }
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* Две колонки равной ширины */
+      grid-gap: 20px; /* Промежуток между колонками */
+    }
+    .reviews {
+      grid-column: з; /* Отзывы будут в левой колонке */
+    }
+    .cabinet {
+      grid-column: 2; /* Личный кабинет будет в правой колонке */
+    }
 
-.content {
-    text-decoration: aquamarine;
-    background-color: #92dafe; /* синий фон #33a2dd*/
-    color: #4f4f4f; /* белый цвет текста */
-    text-align: center; /* выравнивание по центру */
-    margin-top: 20px ;
-    font-size: 20px; /* размер шрифта */
-    font-family: Arial, sans-serif; /* выбранный шрифт */
-    padding: 20px; /* отступы внутри блока */
-    border-radius: 10px; /* скругление углов блока */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* тень блока */
-}
+body {
+        margin: 0;
+        font-family: 'Open Sans', sans-serif;
+        background-image: url('picture/mos_background.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
-@media (max-width: 767px) {
-    /* Здесь задаются стили для экранов шириной до 767 пикселей */
-}
+    .blue-rectangle {
+        background-color: #92dafe;
+        color: #0238da;
+        font-weight: bold;
+        padding: 50px;
+        margin-right: 10px;
+        height: 90px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 20vh;
+    }
 
-/* Стили для планшетов и небольших экранов */
-@media (min-width: 768px) {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 166px;
+    }
 
-}
+    .header_0 {
+        color: #4169E1;
+        text-align: center;
+        width: 100%;
+    }
+
+    .blue-rectangle {
+        background-color: #92dafe;
+        color: #0238da;
+        font-weight: bold;
+        padding: 5px;
+        margin-right: 0px;
+        height: 90px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container {
+        margin: 0 166px;
+    }
+
+    .header_0 {
+        color: #4169E1;
+        text-align: center;
+        width: 100%;
+    }
+
+    .header-line {
+        padding-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 10px; /* Добавить отступ вниз для элемента header */
+    }
+
+    .nav-item {
+        margin-right: 10px; /* Добавить отступ справа для элемента nav-item */
+        color: #0238da;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 18px;
+        margin-right: 25px;
+        transition: color 0.3s linear;
+    }
+
+    .nav-item:hover {
+        color: #4778cc;
+    }
+
+    .num {
+        color: #4169E1;
+        text-decoration: none;
+        font-weight: 700;
+        transition: color 0.3s linear;
+    }
+
+    .num:hover {
+        color: #4778cc;
+    }
+
+    .button {
+        background-color: #42addb;
+        color: #2b6282;
+        text-decoration: none;
+        padding: 14px 18px;
+        font-weight: 700;
+        transition: background-color 0.2s linear;
+    }
+    
+    .footer{
+        margin-bottom: auto;
+    }
+    
+    .container2{
+        margin-bottom: 300px;
+    }
+
+    .content {
+        text-decoration: aquamarine;
+        background-color: #92dafe;
+        color: #4f4f4f;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 20px;
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    @media (max-width: 767px) {
+        /* Здесь задаются стили для экранов шириной до 767 пикселей */
+    }
+
+    @media (min-width: 768px) {
+        /* Стили для планшетов и небольших экранов */
+    }
